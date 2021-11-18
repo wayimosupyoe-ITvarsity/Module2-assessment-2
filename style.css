@@ -1,0 +1,243 @@
+body{
+    padding    : 0;
+    margin     : 0;
+    font-family: Helvetica;
+    background-image  : url('images/mall.jpg');
+    background-size: cover; 
+    background-position: center;
+}
+
+#header{	
+    position: fixed;
+    top     : 0;
+    left    : 0;
+    z-index : 500;
+    width   :100%;
+    height  :110px;
+    background-image  : url('images/mall.jpg');	
+    background-repeat: repeat-x;
+}
+
+#header img{
+    display: block;
+    margin : auto;
+    width: 70%;
+	height : 80%;
+    padding-top: 15px;  
+}
+
+#tabs-top{
+    position: fixed;
+    top     : 110px;
+    left    : 0;
+    z-index : 500;
+    width   : 100%;
+    height  : 40px;
+    background-color: green;
+}
+
+#tabs-top a{
+    float   : left;
+    display : block;
+    width   :25%;
+    height  :35px;
+    font-family: Helvetica;
+    font-weight : 700;
+    color       : white;
+    text-align  : center;
+    text-decoration : none;
+    padding-top     : 12px;
+}
+
+#tabs-top a:hover{
+       color: black;
+}
+
+#main-home{
+    margin-top: 145px;
+}
+
+#tabs-bottom{
+    position : fixed;
+    bottom   : 0;
+    left     : 0;
+    z-index  : 500;
+    width    : 100%;
+    height   : 40px;
+    background-color: green;
+}
+
+#tabs-bottom a{
+    float : left;
+    display : block;
+    width : 50%;
+    height : 35px;
+    font-family: Helvetica;
+    font-weight : 700;
+    color       : white;
+    text-align  : center;
+    text-decoration : none;
+    padding-top     : 12px;
+}
+
+#tabs-bottom a:hover{
+       color: grey;
+}
+
+#main{
+    margin-top: 145px;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+#info-box-full{
+    background-color : rgba(255, 255, 255, .8);
+    width   : 90%;
+    display : block;
+    margin  : auto;
+    margin-top : 12px;
+    padding    : 10px;
+    padding-bottom: 50px;
+}
+
+#info-box-full img{
+    width : 100%;
+}
+
+
+
+#info-box-full h3{
+    text-align : center;
+}
+
+.manubtn{
+    display : block;
+    width: 50%;
+    background-color: green;
+    text-align  : center;
+    color       : white;
+    font-size   : 16px;
+    font-weight : 600;
+    margin : 12px 0;
+    padding : 8px 0;
+    float: left;
+}
+
+.numbtn{
+    display : block;
+    width: 11%;
+    background-color: green;
+    text-align  : center;
+    color       : white;
+    font-size   : 16px;
+    font-weight : 600;
+    margin: 0 auto;
+    padding : 8px 0;
+    float: left;
+}
+
+.butn controls{
+    padding-bottom: 5px;
+}
+
+a.info-box{
+    text-decoration : none;
+    background      : rgba(255, 255, 255, 0.5);
+    width           : 90%;
+    height          : 90px;
+    display         : block;
+    margin          : auto;
+    margin-top      : 12px;
+    padding         : 1px; 
+}
+
+.info-box img{
+    height : 70px;
+    margin : 10px;
+    float  : left;
+}
+
+.info-box img.right{
+    float      : right;
+    margin-top : 25px;
+    height   :  40px;
+}
+
+.info-box h3{
+    padding : 0;
+	margin-bottom :0;
+    width : 90%;
+    color : grey;
+}
+
+.info-box p{
+    margin  : 0;
+    padding : 0;
+    width   : 90%;
+    color   : grey;
+}
+
+.info-box h4{
+    padding : 0;
+	margin-bottom :0;
+    width :70%;
+    color : grey;
+}
+
+img.movie-poster{
+    display : block;
+    height : 520px;
+    width  : 368px !important;
+    margin : 15px;
+    padding-left: 80px;
+}
+
+img.rating{
+    display : block;
+    height : 50px;
+    width  : 190px !important;
+    margin : 10px;
+    padding-left: 170px;
+}
+
+.cast table{
+    width: auto;
+    text-align: center;
+}
+
+.cast td{
+    border: none;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+
+td{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+input{
+    width: 100%;
+    height: 45px;
+    margin : 15px 0;
+    border-bottom : 1px solid #0b915d;
+}
+
+.button{
+    display : block;
+    width: 100%;
+    background-color: blue;
+    text-decoration : none;
+    text-align  : center;
+    color       : white;
+    font-size   : 15px;
+    font-weight : 600;
+    margin : 12px 0;
+    padding : 8px 0;
+}

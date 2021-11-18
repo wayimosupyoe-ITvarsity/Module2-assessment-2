@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+       <div id="header">
+            <img src="images/mall-logo-bg.png"/>
+        </div>
+				
+        <div id="tabs-top">
+			<a href="index.html">HOME</a>
+			<a href="map.html">MALL MAP</a>
+			<a href="stores.html">SHOPS</a>
+			<a href="movies.html">MOVIES</a>
+		</div> 
+        
+        <div id="main">
+            <div id="content">
+                <div id="info-box-full">
+                    <img src="images/mall.jpg"/>
+                    <img src="images/mall2.jpg"/>
+                    
+                    <br/>
+                        <strong><p align="center">MORE THAN A DESTINATION</p></strong>
+                        <p align="center">Pine City Mall boasts a large base of international brands and flagship anchor stores. </p>
+                        <p align="center">Spoil yourself in ultimate fashion, beauty and comfort in the heart of the city.</p>
+                        <p align="center">This multiple award-winning shopping centre is located in the heart of Pine City, and the very place that made this district so highly sought after.</p>
+                        <p align="center">Pine City Mall continues to strive to bring you even more of the best shopping, dining, entertainment and leisure experiences, in a world-class mall that expresses a unique modern design and uses innovative green building to enable excellent, efficient operations.</p>
+                                                
+                    <div class="myslideshow">
+                        <div class="sideshow-content" style="max-width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+                            <img class="sideshow" src="images/mall3.jpg" style="width:100%">
+  
+                        </div>
+
+                        <div class="butn controls">
+                            <div class="menu buttons">
+                                <button class="manubtn" onclick="plusDivs(-1)">❮ Prev</button>
+                                <button class="manubtn" onclick="plusDivs(1)">Next ❯</button>
+                            </div>
+
+                            <button class="numbtn" onclick="currentDiv(1)">1</button> 
+                            <button class="numbtn" onclick="currentDiv(4)">2</button> 
+                            <button class="numbtn" onclick="currentDiv(2)">3</button> 
+                            <button class="numbtn" onclick="currentDiv(3)">4</button> 
+                            <button class="numbtn" onclick="currentDiv(8)">5</button> 
+                            <button class="numbtn" onclick="currentDiv(6)">6</button> 
+                            <button class="numbtn" onclick="currentDiv(7)">7</button> 
+                            <button class="numbtn" onclick="currentDiv(5)">8</button> 
+                        </div>
+                    </div>
+                                        
+                        <h1>!</h1><br/>
+                    
+                        <h3>Thank You Call Again.</h3>    
+
+                        <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                          showDivs(slideIndex += n);
+                        }
+
+                        function currentDiv(n) {
+                          showDivs(slideIndex = n);
+                        }
+
+                        function showDivs(n) {
+                          var i;
+                          var x = document.getElementsByClassName("sideshow");
+                          var dots = document.getElementsByClassName("demo");
+                          if (n > x.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = x.length} ;
+                          for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                             dots[i].className = dots[i].className.replace(" w3-red", "");
+                          }
+                          x[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " w3-red";
+                        }
+                        </script>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tabs-bottom">
+			<a href="about.html">ABOUT</a>
+			<a href="contact.html">CONTACT</a>
+		</div>
+    </body>
+</html>
